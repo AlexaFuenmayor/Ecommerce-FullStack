@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 public class OrderItemDto {
 
     private Long id;
-    private int quality;
+    private int quantity;
     private BigDecimal price;
     private String status;
     private UserDto user;

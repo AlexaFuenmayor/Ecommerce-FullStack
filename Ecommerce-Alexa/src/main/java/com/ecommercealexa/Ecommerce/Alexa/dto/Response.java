@@ -28,16 +28,16 @@ public class Response {
     private UserDto user;
     private List<UserDto> userList;
 
-    private CategoryDto categoryDto;
+    private CategoryDto category;
     private List<CategoryDto> categoryList;
 
-    private ProductDto productDto;
+    private ProductDto product;
     private List<ProductDto> productList;
 
-    private OrderDto orderDto;
+    private OrderDto order;
     private List<OrderDto> orderDtoList;
 
-    private OrderItemDto orderItemDto;
+    private OrderItemDto orderItem;
     private List<OrderItemDto> orderItemDtoList;
 
 }
