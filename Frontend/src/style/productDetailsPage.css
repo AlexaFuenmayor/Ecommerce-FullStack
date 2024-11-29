@@ -1,0 +1,85 @@
+/* Contenedor del producto */
+.product-detail {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-detail .price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff69b4; /* Color rosado */
+  margin-bottom: 20px;
+}
+
+/* Botón "Añadir al carrito" */
+.product-detail .btn-primary {
+  width: 50%; /* Ancho al 50% */
+  max-width: 250px; /* Ancho máximo */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Botones de incremento y decremento */
+.product-detail .quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.product-detail .quantity-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0; /* Gris claro */
+  cursor: pointer;
+  color: #666; /* Gris oscuro para el texto */
+}
+
+.product-detail .quantity-btn:hover {
+  background-color: #e0e0e0; /* Gris más oscuro al pasar el ratón */
+}
+
+/* Diseño móvil */
+@media (max-width: 768px) {
+  .product-detail {
+    padding: 15px;
+  }
+
+  .product-detail h1 {
+    font-size: 1.6rem;
+  }
+
+  .product-detail .price {
+    font-size: 1.2rem;
+  }
+
+  .product-detail .btn-primary {
+    width: 100%;
+    max-width: none;
+  }
+
+  .product-detail .quantity-controls {
+    flex-direction: column;
+  }
+
+  .product-detail .quantity-btn {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,101 @@
+/* Estilos para los productos */
+.product-list {
+    margin-top: 20px;
+  }
+  
+  .product-item .card {
+    border: 1px solid #ffe4e1; /* Bordes rosados claros */
+    border-radius: 10px;
+    height: 100%; /* Aseguramos que la tarjeta tenga la misma altura */
+  }
+  
+  .product-item .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ffe4e1; /* Línea de separación entre imagen y contenido */
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .product-item .card-body {
+    background-color: #fff0f5; /* Fondo rosado claro */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido dentro de la tarjeta */
+    height: 100%;
+  }
+  
+  .product-item .card-title {
+    font-size: 1.2rem;
+    color: #333; /* Texto oscuro */
+    font-weight: bold;
+  }
+  
+  .product-item .product-price {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ff007f; /* Color rosado para el precio */
+  }
+  
+  .product-item .quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-item .quantity-controls button {
+    padding: 0.5rem 1rem;
+    margin: 0 5px;
+    border-radius: 5px;
+  }
+  
+  .product-item button {
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-item button:hover {
+    background-color: #ff85c0; /* Tono rosado más suave en el hover */
+  }
+  
+  .product-item .btn-outline-danger {
+    color: #ff007f;
+    border-color: #ff007f;
+  }
+  
+  .product-item .btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .product-item .btn-outline-primary {
+    color: #ff69b4;
+    border-color: #ff69b4;
+  }
+  
+  .product-item button:focus {
+    outline: none;
+  }
+  
+  /* Aseguramos que las tarjetas tengan el mismo tamaño en todos los dispositivos */
+  .product-list .col-12, .product-list .col-sm-6, .product-list .col-md-4, .product-list .col-lg-3 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .product-list .product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  /* Opcional: Asegura que el precio muestre el símbolo del dólar */
+  .product-item .product-price::before {
+    content: "$"; /* Añade el signo de dólar antes del precio */
+    margin-right: 5px;
+  }
+  

@@ -1,0 +1,55 @@
+/* Estilo para el contenedor del botón */
+.d-grid {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Estilo personalizado para el botón "Registrarse" */
+.btn-register {
+  background-color: #ff007f; /* Color rosado principal */
+  color: white;
+  font-size: 1.1rem; /* Tamaño de letra moderado */
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  width: 50%; /* Tamaño ajustado del botón */
+  max-width: 300px; /* Tamaño máximo del botón */
+  margin: 0 auto; /* Centrado del botón */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto cuando el usuario pasa el mouse */
+.btn-register:hover {
+  background-color: #ff69b4; /* Rosado más suave */
+  transform: translateY(-2px); /* Elevación */
+}
+
+/* Efecto cuando el botón es presionado */
+.btn-register:active {
+  background-color: #ff007f; /* Mantiene el color original */
+  transform: translateY(2px); /* Botón se hunde al presionar */
+}
+
+/* Estilo para el enfoque del botón */
+.btn-register:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 127, 0.5); /* Efecto de enfoque */
+}
+
+/* Asegurando que el enlace "Iniciar sesión" tenga un color de texto adecuado */
+.register-link a {
+  color: #ff007f; /* Rosado fuerte */
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  color: #ff69b4; /* Cambio de color al pasar el mouse */
+  text-decoration: underline;
+}
+
+.register-page{
+  width: 80%;
+}

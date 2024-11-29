@@ -1,0 +1,30 @@
+/* Pagination.css */
+
+/* Ajuste del color de la paginación activa */
+.pagination .page-item.active .page-link {
+    background-color: #ff007f; /* Tono rosado */
+    border-color: #ff007f;
+    color: white;
+  }
+  
+  .pagination .page-link {
+    color: #333; /* Color gris para los números */
+    border: 1px solid #ccc; /* Borde sutil */
+    font-weight: 500;
+  }
+  
+  .pagination .page-link:hover {
+    background-color: #ff69b4; /* Hover en rosado más suave */
+    color: white;
+    border-color: #ff69b4;
+  }
+  
+  .pagination .page-item {
+    margin: 0 5px; /* Espaciado entre los botones */
+  }
+  
+  /* Si se desea agregar una sombra sutil */
+  .pagination .page-item .page-link {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  

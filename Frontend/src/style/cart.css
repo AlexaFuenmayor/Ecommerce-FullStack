@@ -1,0 +1,141 @@
+/* Estilo base para el contenedor del carrito */
+.cart-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  /* Estilo para los elementos de la lista del carrito */
+  .cart-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .cart-item:hover {
+    transform: translateY(-5px); /* Efecto sutil al pasar el cursor */
+  }
+  
+  /* Estilo para la imagen de cada item en el carrito */
+  .cart-item-image {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Detalles del item en el carrito */
+  .cart-item-details {
+    flex-grow: 1;
+  }
+  
+  .cart-item-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .cart-item-description {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .cart-item-price {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Estilos para los controles de cantidad */
+  .quantity-controls {
+    margin-top: 10px;
+  }
+  
+  .quantity-controls button {
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quantity-controls .btn-outline-danger {
+    color: #ff6b6b;
+    border-color: #ff6b6b;
+  }
+  
+  .quantity-controls .btn-outline-danger:hover {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  
+  .quantity-controls .btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .quantity-controls .btn-outline-success:hover {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  /* Estilo para el botón de Verificar */
+  .btn-custom {
+    background-color: #ffe4e1; /* Rosado suave */
+    color: #6f4b8b; /* Color oscuro para el texto */
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background-color: #ff69b4; /* Rosado fuerte en hover */
+    color: white; /* Texto blanco en hover */
+    cursor: pointer;
+  }
+  
+  .btn-custom:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(111, 75, 139, 0.5); /* Sombra suave */
+  }
+  
+  /* Estilo para el mensaje de respuesta */
+  .response-message {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #28a745; /* Verde para éxito */
+  }
+  
+  /* Estilos de texto centralizado */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-end {
+    text-align: right;
+  }
+  
+  .list-unstyled {
+    padding: 0;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .ms-3 {
+    margin-left: 1rem;
+  }
+  
+  .me-2 {
+    margin-right: 0.5rem;
+  }
+  
+  .ms-2 {
+    margin-left: 0.5rem;
+  }
+  

@@ -1,0 +1,91 @@
+/* Estilo personalizado para el navbar */
+.navbar-custom {
+  background-color: #ffe4e1; /* Rosado claro de fondo */
+  padding: 1rem 0; /* Espaciado vertical */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agregar sombra sutil */
+}
+
+/* Estilo para el logo */
+.navbar-custom .navbar-brand img {
+  height: 80px; /* Ajustar la altura del logo */
+  width: auto; /* Mantener la proporción de la imagen */
+}
+
+/* Estilo para los enlaces */
+.navbar-custom .nav-link {
+  color: #333; /* Color gris oscuro para los enlaces */
+  font-weight: 500;
+  font-size: 1rem; /* Tamaño de fuente ajustado */
+  transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+/* Estilo cuando se pasa el mouse sobre los enlaces */
+.navbar-custom .nav-link:hover {
+  color: #ff69b4; /* Color rosado fuerte al pasar el cursor */
+}
+
+/* Estilo para el enlace activo */
+.navbar-custom .nav-link.active {
+  color: #ff007f; /* Color rosado cuando está activo */
+  font-weight: 700; /* Negrita para el enlace activo */
+}
+
+/* Estilo del contenedor de búsqueda */
+.navbar-custom .navbar-search {
+  display: flex; /* Organizar input y botón en línea */
+  justify-content: flex-start; /* Alineación a la izquierda */
+  margin-right: auto; /* Empujar el campo de búsqueda hacia la izquierda */
+}
+
+/* Estilo del campo de búsqueda */
+.navbar-custom .navbar-search input {
+  padding: 0.5rem 1rem; /* Espaciado dentro del input */
+  border-radius: 5px; 
+  border: 2px solid #000; /* Borde negro */
+  background-color: #fff; /* Fondo blanco */
+  width: 250px; /* Ancho fijo */
+  transition: border-color 0.3s ease; /* Transición de borde */
+  font-size: 1.2rem; /* Agrandar el texto dentro del input */
+}
+
+/* Estilo cuando el input está en focus */
+.navbar-custom .navbar-search input:focus {
+  border-color: #c7759e; /* Cambio de color del borde al hacer focus */
+  outline: none; /* Quitar el borde del focus por defecto */
+}
+
+/* Estilo del botón de búsqueda */
+.navbar-custom .navbar-search button {
+  padding: 0.5rem 1.5rem; /* Ajustar el padding */
+  background-color: #c7759e; /* Rosado fuerte */
+  border: 2px solid #000; /* Borde negro */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.1rem; /* Aumentar el tamaño de las letras */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición de color y transformación */
+}
+
+/* Efecto hover en el botón de búsqueda */
+.navbar-custom .navbar-search button:hover {
+  background-color:  #ff007f; /* Cambio de color en hover */
+  transform: scale(1.05); /* Ligera expansión al hacer hover */
+}
+
+/* Estilo de los enlaces */
+.navbar-custom .navbar-nav {
+  margin-left: auto; /* Alineación de los enlaces a la derecha */
+  font-size: 1.1rem; /* Tamaño de letra ajustado para la lista */
+}
+
+/* Estilo para los enlaces cuando están activos */
+.navbar-custom .navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+
+/* Estilo del navbar en dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar-custom .navbar-search input {
+    width: 200px; /* Ancho más pequeño en móviles */
+  }
+}
