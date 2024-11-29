@@ -20,8 +20,9 @@ public class Review {
     private int rating; // 1 al 10
 
     @ManyToOne
-    @Column(name="product_id")
+    @JoinColumn(name="product_id")
     private Product product;
+
 
     @ManyToOne
     @JoinColumn(name="user_id")

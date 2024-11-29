@@ -1,5 +1,5 @@
 package com.ecommercealexa.Ecommerce.Alexa.enums;
 
 public enum OrderStatus {
-    //PENDING, CONFIRMED, SHIPPED, DELIVERED, CANCELLED, RETURNED
+    PENDING, CONFIRMED, SHIPPED, DELIVERED, CANCELLED, RETURNED
 }
