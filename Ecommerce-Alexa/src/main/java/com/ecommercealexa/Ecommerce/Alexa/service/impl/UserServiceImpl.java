@@ -46,6 +46,7 @@ public class UserServiceImpl implements UserService {
                 .name(registrationRequest.getName())
                 .email(registrationRequest.getEmail())
                 .password(passwordEncoder.encode(registrationRequest.getPassword())) // Codificar la contraseña
+                .phoneNumber(registrationRequest.getPhoneNumber())
                 .role(role)
                 .build();
 

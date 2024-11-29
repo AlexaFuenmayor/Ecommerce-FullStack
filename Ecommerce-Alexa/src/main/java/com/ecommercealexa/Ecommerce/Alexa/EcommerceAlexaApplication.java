@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class EcommerceAlexaApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(EcommerceAlexaApplication.class, args);
+
 	}
 
 }

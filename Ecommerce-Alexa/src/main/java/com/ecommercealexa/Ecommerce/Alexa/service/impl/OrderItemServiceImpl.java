@@ -78,7 +78,7 @@ public class OrderItemServiceImpl implements OrderItemService {
 
         return Response.builder()
                 .status(200)
-                .message("Order was successfully placed")
+                .message("El pedido se realizó correctamente")
                 .build();
 
     }
@@ -86,13 +86,13 @@ public class OrderItemServiceImpl implements OrderItemService {
     @Override
     public Response updateOrderItemStatus(Long orderItemId, String status) {
         OrderItem orderItem = orderItemRepo.findById(orderItemId)
-                .orElseThrow(()-> new NotFoundException("Order Item not found"));
+                .orElseThrow(()-> new NotFoundException("Artículo del pedido no encontrado"));
 
         orderItem.setStatus(OrderStatus.valueOf(status.toUpperCase()));
         orderItemRepo.save(orderItem);
         return Response.builder()
                 .status(200)
-                .message("Order status updated successfully")
+                .message("Estado del pedido actualizado con éxito")
                 .build();
     }
 
@@ -105,7 +105,7 @@ public class OrderItemServiceImpl implements OrderItemService {
         Page<OrderItem> orderItemPage = orderItemRepo.findAll(spec, pageable);
 
         if (orderItemPage.isEmpty()){
-            throw new NotFoundException("No Order Found");
+            throw new NotFoundException("No se encontró ningún pedido");
         }
         List<OrderItemDto> orderItemDtos = orderItemPage.getContent().stream()
                 .map(entityDtoMapper::mapOrderItemToDtoPlusProductAndUser)
