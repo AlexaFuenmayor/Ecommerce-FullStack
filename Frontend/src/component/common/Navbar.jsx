@@ -14,6 +14,8 @@ const Navbar = () => {
   // const isAdmin = ApiService.isAdmin();
   const isAuthenticated = ApiService.isAuthenticated();
 
+
+  // MANEJADORES
   const handleSearchChange = (e) => {
     setSearchValue(e.target.value);
   };
@@ -44,7 +46,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-custom">
       <div className="container">
-        {/* Logo */}
+       
         <NavLink to="/" className="navbar-brand">
           <img src={logo} alt="logo tienda" />
         </NavLink>
@@ -64,7 +66,7 @@ const Navbar = () => {
 
         {/* Links and Search */}
         <div className="collapse navbar-collapse" id="navbarNav">
-          {/* Search - Ahora está a la izquierda */}
+          
           <div className="navbar-search me-auto">
             <form className="d-flex" onSubmit={handleSearchSubmit}>
               <input

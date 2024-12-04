@@ -32,7 +32,7 @@ public class SecurityConfig {
                 .cors(Customizer.withDefaults()) // Habilita la configuración por defecto para CORS (Cross-Origin Resource Sharing)
                 .authorizeHttpRequests(request -> request
                         // Permite el acceso sin autenticación a las rutas específicas
-                        .requestMatchers("/auth/**", "/category/**", "/product/**", "/order/**").permitAll()
+                        .requestMatchers("/auth/**", "/category/**", "/product/**", "/order/**", "/hello/").permitAll()
                         // Requiere autenticación para cualquier otra solicitud
                         .anyRequest().authenticated())
                 // Configura la política de sesiones como STATELESS (sin estado)
